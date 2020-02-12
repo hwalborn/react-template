@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom'
 
+require('../style/page2.less');
+
 export class Page2 extends React.Component<{}, {}> {
     constructor(props:  Readonly<{}>) {
         super(props);
@@ -10,7 +12,8 @@ export class Page2 extends React.Component<{}, {}> {
         return (
             <div>
                 <h1>HI HOLT FROM PAGE 2</h1>
-                <Link id="header-title" to="/">BACK TO HOMEPAGE</Link>
+                <p>This is black <span id="holt">But this is white</span></p>
+                <Link to="/">BACK TO HOMEPAGE</Link>
             </div>
         )
     }
